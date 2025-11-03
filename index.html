@@ -1,0 +1,99 @@
+<Html lang="ES">
+
+<!DOCTYPE html>
+
+<Head>
+ <Meta charset="UTE-8">
+ <Meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <Meta name= "description" content="Esta pagina contiene todo el contenido official de Darkness in the abyss.">
+ <Meta name="keywords" content="Space Witches, Lasdel, Lasdel trabajos, Creador de Divine Rose, creador de Darkness in the abyss, Maya space witches.">
+ <Meta name="author" content="Louy Andrew Shaoran Diaz Lopez">
+
+
+ <Title>Space witches - Official website</title>
+
+ <link rel="icon" href="C:\Users\SHAORAN\Desktop\SW.html\pixil-frame-4.png" type="image/png">
+
+  <style>
+  body {
+  background-image:url('Fondo 2.png');
+  background-position: top left ;
+  background-repeat : repeat ;
+  }
+ 
+   img {
+
+display: block;
+
+margin-bottom: 20px;
+}
+
+.play-icon {
+ 
+ width: 50px;
+cursor: pointer;
+position: fixed;
+top: 10px;
+right: 10px;
+}
+
+.imagenes {
+
+display: flex; 
+justify-content: center;
+gap: 10px;
+}
+
+ 
+
+.imagen {
+max-width: 100%;
+height: auto;
+}
+
+  </style>
+
+</Head>
+
+<body>
+
+<center>
+
+ <h1 style="color:white;"><b>Space witches</b></h1>
+
+<img src="C:\Users\SHAORAN\Desktop\SW.html\Audio exsist.png" alt="Icono de reproducción" class="play-icon" id="audioIcono" onclick="playAudio()">
+
+<audio id="miAudio">
+<source src="C:\Users\SHAORAN\Desktop\SW.html\sonic-cd.mp3" type="audio/mpeg">
+
+Tu navegador no soporta la reproducción de audio.
+</audio>
+
+ <img src="Sonic CD.png" alt="Sonic 1">
+
+ <img src="Maya 1.gif" alt="Maya 2" width="300px">
+
+<script>
+ 
+
+function playAudio() {
+
+var audio = document.getElementById("miAudio");
+var icono = document.getElementById("audioIcono");
+if (audio.paused) {
+
+audio.play();
+icono.src = "Audio.gif";
+} else {
+audio.pause();
+
+icono.src = "Audio off.png";
+}
+
+}
+   
+
+</script>
+
+</center>
+</body>
